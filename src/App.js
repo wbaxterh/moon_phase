@@ -8,7 +8,7 @@ function App() {
   const [currentDateTime, setCurrentDateTime] = useState(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
   useEffect(() => {
-      fetch('/api/moonphase')
+      fetch('/moonphase')
           .then(response => response.json())
           .then(data => {
               setMoonPhase(data.moon_phase);
