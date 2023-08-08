@@ -38,6 +38,7 @@ function App() {
                 {/* <h1>Moon Phase App</h1> */}
                 <img className="moon-img" src={`./images/${moonImage}`} alt={`Moon phase: ${moonPhase}`} />
                 <h2>Moon Phase: {moonPhase}</h2>
+                <p>Hello World</p>
             </header>
         </div>
     );
