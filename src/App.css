@@ -47,6 +47,55 @@
   z-index: 1;
   font-weight:400;
 }
+.more-info-button {
+  position: absolute;
+  bottom: 25px; /* Adjust this value as needed */
+  right: 20px; /* Adjust this value as needed */
+  background-color: #aaa;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.more-info-button:hover {
+  background-color: #aaa;
+  color: #333;
+}
+
+.fa-lightbulb, .fa-xmark {
+  line-height: 40px; /* Align the icon vertically center */
+  color: #fff;
+}
+
+.more-info {
+  background-color:#eee;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  color: #333;
+}
+
+button {
+  margin-top: 0px;
+  padding: 5px 10px;
+  background-color: #eee;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
 
 
 @keyframes App-logo-spin {
