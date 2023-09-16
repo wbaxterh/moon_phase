@@ -45,7 +45,7 @@
 }
 
 .sun-bg {
-	background-image: url("../images/sunnySky.png");
+	background-image: url("../images/sunSky.png");
 	background-size: cover;
 	background-position: center;
 }
@@ -153,9 +153,9 @@ button:hover {
 
 .sun-screen {
 	height: 100vh;
-	color: #ebe412;
-	font-weight:bold;
-	
+	color: #fff;
+	font-weight: bold;
+	/* text-shadow: 1px 1px 1px #000; */
 }
 .sun-bottom {
 	position: absolute;
@@ -163,7 +163,7 @@ button:hover {
 	left: auto;
 	right: auto;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.5);
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
