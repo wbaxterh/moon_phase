@@ -37,24 +37,24 @@ function SunScreen(props) {
 		const times = SunCalc.getTimes(now, latitude, longitude);
 		const currentHour = now.getHours();
 
-		if (
-			currentHour >= times.sunrise.getHours() &&
-			currentHour < times.sunriseEnd.getHours()
-		) {
-			setSunBackground("sunDawn.png");
-		} else if (
-			currentHour >= times.sunriseEnd.getHours() &&
-			currentHour < times.sunsetStart.getHours()
-		) {
-			setSunBackground("sunDay.png");
-		} else if (
-			currentHour >= times.sunsetStart.getHours() &&
-			currentHour < times.sunset.getHours()
-		) {
-			setSunBackground("sunSet.png");
-		} else {
-			setSunBackground("sunNight.png");
-		}
+		// if (
+		// 	currentHour >= times.sunrise.getHours() &&
+		// 	currentHour < times.sunriseEnd.getHours()
+		// ) {
+		// 	setSunBackground("sunDawn.png");
+		// } else if (
+		// 	currentHour >= times.sunriseEnd.getHours() &&
+		// 	currentHour < times.sunsetStart.getHours()
+		// ) {
+		// 	setSunBackground("sunDay.png");
+		// } else if (
+		// 	currentHour >= times.sunsetStart.getHours() &&
+		// 	currentHour < times.sunset.getHours()
+		// ) {
+		// 	setSunBackground("sunSet.png");
+		// } else {
+		// 	setSunBackground("sunNight.png");
+		// }
 		const interval = setInterval(updateSunPosition, 60 * 1000); // Update every minute
 
 		setAzimuth(SunCalc.getPosition(now, latitude, longitude).azimuth);
